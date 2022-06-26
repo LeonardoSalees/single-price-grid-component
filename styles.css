@@ -115,6 +115,7 @@ button {
   grid-area: col-b;
   color: var(--white-color);
 }
+
 .col-c {
   background-color: var(--blue-light-color);
   grid-area: col-c;
@@ -145,8 +146,8 @@ button {
 }
 .stamp {
   position: fixed;
-  top: 41%;
-  right: 47%;
+  bottom: 0;
+  right: 0;
 }
 
 .stamp img {
