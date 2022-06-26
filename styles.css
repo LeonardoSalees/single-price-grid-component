@@ -1,0 +1,154 @@
+/* General style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --white-color: #fff5ff;
+  --gray-color: #dfd9d9;
+  --gray-dark-color: #807d7d;
+  --blue-light-color: #659ae4;
+  --blue-dark-color: #4581d6;
+  --green-light-color: #9fc131;
+  font-size: 62.5%;
+}
+
+html,
+body {
+  width: 100%;
+}
+ul {
+  font-size: 1.4rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--gray-color);
+  font-family: 'Open Sans', sans-serif;
+}
+img {
+  max-width: 100%;
+}
+
+/* patterns styles */
+
+h1,
+h2,
+h3 {
+  padding-bottom: 1rem;
+  font-family: 'Girassol';
+}
+
+h1 {
+  font-size: 2.4rem;
+  color: var(--blue-light-color);
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+p {
+  font-size: 1.2rem;
+}
+
+.col-a,
+.col-b,
+.col-c {
+  padding: 3.5rem;
+}
+
+button {
+  margin-top: 2rem;
+  font-weight: 700;
+  color: var(--white-color);
+  background-color: var(--green-light-color);
+  text-decoration: none;
+  border: none;
+  box-shadow: 0px 1px 5px 0px;
+  padding: 1rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Body styles */
+
+.card-price {
+  background-color: var(--white-color);
+  height: 75%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    'col-a col-a'
+    'col-b col-c';
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 20px 0px gray;
+}
+
+.col-a {
+  grid-area: col-a;
+  color: var(--gray-dark-color);
+}
+
+.col-a .content h3 {
+  color: var(--green-light-color);
+}
+.col-a .content p {
+  line-height: 2rem;
+}
+
+.col-b {
+  background-color: var(--blue-dark-color);
+  grid-area: col-b;
+  color: var(--white-color);
+}
+.col-c {
+  background-color: var(--blue-light-color);
+  grid-area: col-c;
+  color: var(--white-color);
+}
+
+/* background styles */
+
+.circle {
+  position: fixed;
+  width: 60%;
+  height: 100%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.top {
+  background: var(--blue-dark-color);
+  top: -50%;
+  left: -25%;
+  z-index: -1;
+}
+.down {
+  background: var(--green-light-color);
+  bottom: -50%;
+  right: -25%;
+  z-index: -1;
+}
+.stamp {
+  position: fixed;
+  top: 41%;
+  right: 46%;
+}
+
+.stamp img {
+  width: 8rem;
+}
