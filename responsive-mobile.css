@@ -1,0 +1,13 @@
+@media (max-width: 500px) {
+  body {
+    height: 100%;
+  }
+  .card-price {
+    margin-block: 5rem;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      'col-a'
+      'col-b'
+      'col-c';
+  }
+}
