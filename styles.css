@@ -6,7 +6,8 @@
 }
 :root {
   --white-color: #fff5ff;
-  --gray-color: #bfbfbf;
+  --gray-color: #dfd9d9;
+  --gray-dark-color: #807d7d;
   --blue-light-color: #659ae4;
   --blue-dark-color: #4581d6;
   --green-light-color: #9fc131;
@@ -27,6 +28,12 @@ body {
   display: flex;
   align-items: center;
   background-color: var(--gray-color);
+  font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Girassol';
 }
 
 h1 {
@@ -35,20 +42,22 @@ h1 {
 }
 
 h2 {
+  font-weight: 400;
   font-size: 2.2rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-weight: 400;
+  font-size: 1.6rem;
 }
 p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .col-a,
 .col-b,
 .col-c {
-  padding: 2rem;
+  padding: 3.5rem;
 }
 
 button {
@@ -73,13 +82,12 @@ button {
     'col-b col-c';
   width: 70%;
   margin: 0 auto;
-  border: 1px solid gray;
-  box-shadow: 1px 1px 6px 1px gray;
+  box-shadow: 0px 0px 20px 0px gray;
 }
 
 .col-a {
   grid-area: col-a;
-  color: var(--gray-color);
+  color: var(--gray-dark-color);
 }
 
 .col-a .content h3 {
