@@ -4,10 +4,44 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --white-color: #fff5ff;
+}
 
 html,
 body {
   width: 100%;
 }
+ul {
+  list-style: none;
+}
 
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--white-color);
+}
 
+.card-price {
+  height: 70%;
+  display: grid;
+  grid-template-areas:
+    'col-a col-a'
+    'col-b col-c';
+  width: 70%;
+  margin: 0 auto;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 6px 1px gray;
+}
+
+.col-a {
+  grid-area: col-a;
+}
+
+.col-b {
+  grid-area: col-b;
+}
+.col-c {
+  grid-area: col-c;
+}
