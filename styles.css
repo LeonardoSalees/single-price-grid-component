@@ -33,6 +33,12 @@ body {
   background-color: var(--gray-color);
   font-family: 'Open Sans', sans-serif;
 }
+img {
+  max-width: 100%;
+}
+
+/* patterns styles */
+
 h1,
 h2,
 h3 {
@@ -77,6 +83,8 @@ button {
   cursor: pointer;
 }
 
+/* Body styles */
+
 .card-price {
   background-color: var(--white-color);
   height: 75%;
@@ -111,4 +119,36 @@ button {
   background-color: var(--blue-light-color);
   grid-area: col-c;
   color: var(--white-color);
+}
+
+/* background styles */
+
+.circle {
+  position: fixed;
+  width: 60%;
+  height: 100%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.top {
+  background: var(--blue-dark-color);
+  top: -50%;
+  left: -25%;
+  z-index: -1;
+}
+.down {
+  background: var(--green-light-color);
+  bottom: -50%;
+  right: -25%;
+  z-index: -1;
+}
+.stamp {
+  position: fixed;
+  top: 41%;
+  right: 46%;
+}
+
+.stamp img {
+  width: 8rem;
 }
